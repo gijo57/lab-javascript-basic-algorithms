@@ -53,6 +53,20 @@ switch (hacker1.localeCompare(hacker2)) {
 const lorem =
   "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra pulvinar facilisis. Phasellus at gravida purus. Nulla gravida, orci nec ultrices aliquam, massa ligula bibendum dui, vitae fermentum felis erat et nulla. Sed vehicula neque at turpis pulvinar varius. Donec lacinia lacus sed justo faucibus, quis varius augue sagittis. Sed gravida dolor vel arcu sodales blandit. Proin malesuada, felis nec placerat viverra, lectus nulla porttitor erat, sit amet posuere nisl magna ac nulla. Quisque libero mi, vehicula in enim non, dignissim iaculis urna. Cras faucibus tincidunt bibendum. Vestibulum lacinia a mi id vehicula. Nullam eu sodales est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed commodo nisi risus, nec euismod mauris fermentum quis. Donec vel orci interdum risus aliquet lacinia. Integer nec quam at dui vestibulum consequat. Sed mattis pulvinar urna, eget dictum augue tristique vitae. Vivamus sodales ligula quis tortor pellentesque ornare. Maecenas pretium maximus nibh non efficitur. Suspendisse ac consectetur ligula. Maecenas non urna egestas, tincidunt diam a, tincidunt nunc. Donec molestie orci id leo tempus ultrices. Proin vel diam nulla. In ultrices id libero in tempus. Etiam scelerisque est mi, ac facilisis magna semper in. Mauris non blandit odio, eu facilisis magna. Aenean ornare pharetra lectus, eu gravida ligula commodo facilisis. Mauris dignissim mattis luctus. Donec massa odio, volutpat gravida quam sit amet, porta maximus dui. Curabitur neque diam, pretium at nulla sit amet, dapibus lacinia purus. Quisque quis porttitor augue, id efficitur purus. Nullam feugiat blandit lacinia. Suspendisse et dui vel est tempus rutrum. Vivamus ante ligula, convallis nec nunc sit amet, suscipit mattis enim. Sed vel ornare metus, vitae rhoncus risus. Duis euismod maximus urna quis facilisis. Nam ut orci non tellus vestibulum malesuada. Morbi tempus, elit quis lobortis aliquam, est ligula iaculis tortor, ac elementum neque ex id dui. Sed mattis metus ut quam efficitur sollicitudin.";
 
+const loremWords = lorem.split(" ");
+const wordCount = loremWords.length;
+console.log(wordCount);
+
+const wordToCount = "et";
+let specificWordCount = 0;
+
+for (let i = 0; i < wordCount; i++) {
+  if (loremWords[i] === wordToCount) {
+    specificWordCount += 1;
+  }
+}
+console.log(specificWordCount);
+
 //Bonus 2
 
 const phraseToCheck = "A man, a plan, a canal, Panama";
