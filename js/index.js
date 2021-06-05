@@ -1,7 +1,7 @@
 // Iteration 1: Names and Input
 const hacker1 = "Bob";
 console.log(`The driver's name is ${hacker1}`);
-const hacker2 = "Lisa";
+const hacker2 = "Bob";
 console.log(`The navigator's name is ${hacker2}`);
 
 // Iteration 2: Conditionals
@@ -68,7 +68,6 @@ for (let i = 0; i < wordCount; i++) {
 console.log(specificWordCount);
 
 //Bonus 2
-
 const phraseToCheck = "A man, a plan, a canal, Panama";
 let phraseWithoutSpaces = "";
 let reversePhrase = "";
