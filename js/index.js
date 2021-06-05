@@ -69,20 +69,17 @@ console.log(specificWordCount);
 
 //Bonus 2
 const phraseToCheck = "A man, a plan, a canal, Panama";
-let phraseWithoutSpaces = "";
+let cleanPhrase = "";
 let reversePhrase = "";
 
 for (let char of phraseToCheck) {
   if (/[a-zA-Z]/.test(char)) {
-    phraseWithoutSpaces += char;
+    cleanPhrase += char;
   }
 }
 
-for (let i = phraseToCheck.length - 1; i >= 0; i--) {
-  if (!/[a-zA-Z]/.test(phraseToCheck[i])) {
-    continue;
-  }
-  reversePhrase += phraseToCheck[i];
+for (let i = cleanPhrase.length - 1; i >= 0; i--) {
+  reversePhrase += cleanPhrase[i];
 }
 
-console.log(phraseWithoutSpaces.toLowerCase() === reversePhrase.toLowerCase());
+console.log(cleanPhrase.toLowerCase() === reversePhrase.toLowerCase());
